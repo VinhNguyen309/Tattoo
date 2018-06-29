@@ -1,0 +1,323 @@
+/*Định dạng cho Template mẫu*/
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+/*phần Header*/
+.header
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+/*phần logo thuộc header*/
+
+.header .logo
+{
+	z-index: 1;
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	font-size: 40px;
+	color: white;
+	border: inset 2px;
+	padding: 5px 10px;
+
+}
+
+
+.header .logo span
+{
+	color: #44A790;
+}
+
+/*phần menu thuộc header*/
+
+.header .menu
+{
+	width: 400px;
+	position: absolute;
+	z-index: 1;
+	top: 30px;
+	right: 50px;
+}
+
+.header .menu ul 
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.header .menu ul li
+{
+	float: left;
+}
+
+.header .menu ul li a
+{
+	display: block;
+    color: white;
+    text-decoration: none;
+    margin : 0 15px;
+    font-size: 20px;
+}
+
+
+.header .menu ul li button
+{
+	display: block;
+    color: white;
+    margin : 0 15px;
+    font-size: 19px;
+    border: none;
+    background-color: rgba(255,0,0,0);
+    cursor: pointer;
+}
+
+
+
+.header .menu ul li a:hover
+{
+	color: #44A790;
+}
+
+.header .menu ul li button:hover
+{
+	color: #44A790;
+}
+
+
+.header .menu span
+{
+	color: #44A790;
+}
+ /*phần search thuộc header*/
+
+.header .search
+{
+	position: absolute;
+	top: 350px;
+	left: 400px;
+	width: 700px;
+	color: #44A790;
+	font-size: 25px;
+
+}
+
+.header .search .searchinfo
+{
+	width: 700px;
+	border: inset 2px;
+	color: #006056;
+	opacity: 0.6;
+	font-size: 23px;
+	height: 50px;
+	border: none;
+}
+
+
+/*phần footer*/
+
+.footer
+{
+	width: 100%;
+	background-color: #3C3C3C;
+	height: 350px;
+	position: relative;
+}
+
+.footer .contact1
+{
+	width: 20%;
+	float: left;
+	color: white;	
+	margin: 30px 2% 0 4%;
+	text-align: center;
+}
+
+.footer .contact1 p
+{
+	margin:  30px 0 ;
+	text-align: left;
+	opacity: 0.7;	
+}
+
+
+.footer .contact2
+{
+	width: 20%;
+	float: left;
+	color: white;	
+	margin: 30px 2% 0 2% ;
+	text-align: center;
+}
+.footer .contact3
+{
+	width: 20%;
+	float: left;
+	color: white;
+	margin: 30px 2% 0 2% ;	
+	text-align: center;
+}
+.footer .contact4
+{
+	width: 20%;
+	float: left;
+	color: white;
+	margin: 30px 4% 0 2%;
+	text-align: center;	
+}
+
+
+/*phần design*/
+
+.footer .design
+{
+	position: absolute;
+	width: 100%;
+	background-color: #2E2E2E;
+	height: 50px;
+	color: white;
+	text-align: center;
+	padding: 20px 0 0 0;
+	bottom: 0;
+}
+
+
+/*Phần sign in*/ 
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal button {
+    background-color: #44A790;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Extra styles for the cancel button */
+.container .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    background-color: white;
+}
+
+
+
+
+
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+

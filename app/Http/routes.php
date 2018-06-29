@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('model/nguoi/save', function(){
+	$nguoi = new App\Nguoi();
+	$nguoi->MaNguoi;
+	$nguoi->HoTen;
+	$nguoi->GioiTinh;
+	$nguoi->NgaySinh ;
+	$nguoi->Email;
+	$nguoi->DienThoai;
+	$nguoi->DiaChi;
+	$nguoi->loai;
+	$nguoi->TenDangNhap;
+	$nguoi->MatKhau;
+	$nguoi->save();
+	echo "Da thuc hien save";
+});
+Route::post('model/nguoi/all','MyController@postForm');
+
